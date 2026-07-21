@@ -11,17 +11,15 @@ public:
         for(char c:ransomNote){
             rp[c]++;
         }
-        int cnt=rp.size();
+        
         for(auto it: rp){
-            if(mp[it.first]>=it.second){
-                cnt--;
+            if(mp[it.first]<it.second){
+                return false;
 
             }
         }
-        if(cnt==0){
-            return true;
-        }
-        return false;
+         
+        return true;
         
     }
 };
