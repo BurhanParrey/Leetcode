@@ -13,7 +13,7 @@ public:
         }
         
         for(auto it: rp){
-            if(mp[it.first]<it.second){
+            if(mp[it.first]<rp[it.first]){
                 return false;
 
             }
