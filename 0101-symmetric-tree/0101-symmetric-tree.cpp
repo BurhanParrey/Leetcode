@@ -24,13 +24,16 @@ public:
      bool ta = check(a->left,b->right);
      bool tb = check(a->right,b->left);
 
-     if(ta==true && tb==true)
-        return true;
-     return false;
+    //  if(ta==true && tb==true)
+    //     return true;
+    //  return false;
+     return ta && tb;
 
     }
 
     bool isSymmetric(TreeNode* root) {
+        if(root == NULL)
+          return true;
 
         TreeNode* a=root->left;
         TreeNode* b=root->right;
