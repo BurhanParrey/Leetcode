@@ -23,6 +23,7 @@ public:
         }else{
             if(root->val<=prev->val){
                 ans=false;
+                return ;
             }
             prev=root;
         }
